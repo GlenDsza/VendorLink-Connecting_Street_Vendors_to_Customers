@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+       <ScrollView
+           android:id="@+id/scrollView2"
+           android:layout_width="0dp"
+           android:layout_height="0dp"
+           android:layout_marginStart="8dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="8dp"
+           android:layout_marginBottom="8dp"
+           app:layout_constraintBottom_toTopOf="@+id/fmenu_l1"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.5"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent">
+
+              <HorizontalScrollView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                     <TableLayout
+                         android:id="@+id/fmenu_tl"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:stretchColumns="*">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp">
+
+                                   <TextView
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_marginEnd="5dp"
+                                       android:background="@drawable/menu_heading"
+                                       android:gravity="center"
+                                       android:text="Product"
+                                       android:paddingVertical="3dp"
+                                       android:paddingHorizontal="6dp"
+                                       android:textColor="@color/white"
+                                       android:textSize="20sp"
+                                       android:textStyle="bold" />
+
+                                   <TextView
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_marginHorizontal="5dp"
+                                       android:background="@drawable/menu_heading"
+                                       android:gravity="center"
+                                       android:text="Price"
+                                       android:paddingVertical="3dp"
+                                       android:paddingHorizontal="6dp"
+                                       android:textColor="@color/white"
+                                       android:textSize="20sp"
+                                       android:textStyle="bold" />
+
+                                   <TextView
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_marginStart="5dp"
+                                       android:background="@drawable/menu_heading"
+                                       android:gravity="center"
+                                       android:text="Description"
+                                       android:paddingVertical="3dp"
+                                       android:paddingHorizontal="6dp"
+                                       android:textColor="@color/white"
+                                       android:textSize="20sp"
+                                       android:textStyle="bold" />
+                            </TableRow>
+                     </TableLayout>
+              </HorizontalScrollView>
+       </ScrollView>
+
+       <LinearLayout
+           android:id="@+id/fmenu_l1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="8dp"
+           android:layout_marginEnd="8dp"
+           android:layout_marginBottom="8dp"
+           android:gravity="center"
+           android:weightSum="4"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.5"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+              <Button
+                  android:id="@+id/fmenu_b1"
+                  android:layout_height="35dp"
+                  android:layout_width="wrap_content"
+                  android:drawableEnd="@drawable/fmenu_add"
+                  android:layout_weight="1"
+                  android:paddingEnd="5dp"
+                  android:background="@drawable/bs_buttonbg"
+                  android:textColor="@color/white"
+                  android:layout_marginHorizontal="2dp"
+                  android:text="ADD" />
+
+              <Button
+                  android:id="@+id/fmenu_b2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="35dp"
+                  android:layout_weight="1"
+                  android:paddingEnd="5dp"
+                  android:background="@drawable/bs_buttonbg"
+                  android:textColor="@color/white"
+                  android:layout_marginHorizontal="2dp"
+                  android:drawableEnd="@drawable/profile_edit"
+                  android:text="EDIT" />
+
+              <Button
+                  android:id="@+id/fmenu_b3"
+                  android:layout_width="wrap_content"
+                  android:layout_height="35dp"
+                  android:layout_weight="1"
+                  android:paddingEnd="5dp"
+                  android:background="@drawable/bs_buttonbg"
+                  android:textColor="@color/white"
+                  android:layout_marginHorizontal="2dp"
+                  android:drawableEnd="@drawable/profile_save"
+                  android:text="SAVE"
+                  android:visibility="gone"/>
+              <Button
+                  android:id="@+id/fmenu_b4"
+                  android:layout_width="wrap_content"
+                  android:layout_height="35dp"
+                  android:layout_weight="1"
+                  android:paddingEnd="5dp"
+                  android:background="@drawable/bs_buttonbg"
+                  android:textColor="@color/white"
+                  android:layout_marginHorizontal="2dp"
+                  android:drawableEnd="@drawable/menu_delete"
+                  android:text="DELETE"/>
+
+       </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

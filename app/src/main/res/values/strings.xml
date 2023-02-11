@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">LowKey</string>
+    <string name="title_activity_maps">LowKey</string>
+    <string name="title_activity_drawer_maps">drawer_maps</string>
+    <string name="facebook_app_id">357217716313208</string>
+    <string name="fb_login_protocol_scheme">fb357217716313208</string>
+    <string name="facebook_client_token">ef37e30cf65becfe0c483b65f09668b3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="abstract1">Street vendors as part of the informal workforce offers easy access to fresh vegetables and fruits at a lower price on a daily basis. While the market has evolved and demand has grown over time, the informal sector workers have found difficult to catch up with the modern retail and disruptive technologies that have come in. Besides offering products at lower cost, street vendors hold an advantage of providing much fresher produce than these suppliers. However, there are challenges for consumers in accessing street vendors across various locations. Bringing street vendors on a digital platform could integrate them into the digital space, and thereby help in improving their market reach, service delivery and the overall system performance.</string>
+</resources>

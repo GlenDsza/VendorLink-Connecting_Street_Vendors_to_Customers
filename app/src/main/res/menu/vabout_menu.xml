@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item android:id="@+id/nav_about"
+            android:title="About Us"
+            android:checked="true"
+            android:icon="@drawable/contact"/>
+        <item android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/nav_home"/>
+        <item android:id="@+id/nav_prof"
+            android:title="Profile"
+            android:icon="@drawable/nav_prof"/>
+    </group>
+    <group
+        android:id="@+id/menu_bot"
+        android:checkableBehavior="none">
+        <item android:id="@+id/nav_location"
+            app:actionLayout="@layout/drawer_switch"
+            android:title="Location"
+            android:icon="@drawable/drawer_location"/>
+        <item android:id="@+id/nav_sign_out"
+            android:title="Logout"
+            android:icon="@drawable/logout"/>
+    </group>
+</menu>

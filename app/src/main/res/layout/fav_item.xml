@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingVertical="5dp"
+    android:layout_marginHorizontal="5dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fav_profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:src="@drawable/prof_img_icon" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="2dp">
+            <TextView
+                android:id="@+id/fav_tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:fontFamily="serif"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/fav_tv_shopname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Shopname)"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="serif"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category - ____________"
+                android:textSize="15sp"
+                android:layout_marginVertical="2dp"/>
+            <RatingBar
+                android:id="@+id/fav_tv_rating"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/fav_ib_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fav_remove"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

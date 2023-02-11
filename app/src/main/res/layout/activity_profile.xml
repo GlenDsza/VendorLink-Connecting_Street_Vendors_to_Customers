@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/prof_draw"
+    android:fitsSystemWindows="true">
+<!--    tools:openDrawer="start">-->
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/prof_nav_view"
+        map:menu="@menu/prof_menu"
+        android:layout_gravity="start"
+        map:headerLayout="@layout/header"/>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/profile_backg"
+        map:layout_constraintBottom_toTopOf="@+id/guideline2"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.5"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/vhome_profile_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/prof_img_icon"
+        map:civ_border_color="@color/white"
+        map:civ_border_width="5dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.498"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="0.13" />
+
+    <ImageButton
+        android:id="@+id/prof_menubtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile_menuicon"
+        map:layout_constraintBottom_toTopOf="@+id/guideline2"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.045"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="0.129"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/t1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="2dp"
+        android:layout_marginStart="16dp"
+        android:hint="Username"
+        map:endIconMode="clear_text"
+        map:errorIconDrawable="@drawable/error"
+        map:layout_constraintBottom_toTopOf="@+id/t3"
+        map:layout_constraintEnd_toEndOf="@+id/t3"
+        map:layout_constraintStart_toEndOf="@+id/view"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/vhome_profile_image"
+        map:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:enabled="false"
+            android:inputType="text"
+            android:maxLength="20"
+            android:text=" "
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/iv_name"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        android:src="@drawable/profile_editicon"
+        map:layout_constraintBottom_toBottomOf="@+id/t3"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.5"
+        map:layout_constraintStart_toEndOf="@+id/t3"
+        map:layout_constraintTop_toTopOf="@+id/t3" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/t3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="1dp"
+        android:layout_marginVertical="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Name"
+        map:endIconMode="clear_text"
+        map:errorIconDrawable="@drawable/error"
+        map:layout_constraintBottom_toTopOf="@+id/t5"
+        map:layout_constraintEnd_toStartOf="@+id/iv_name"
+        map:layout_constraintHorizontal_bias="0.5"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/t1"
+        map:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:inputType="text"
+            android:maxLength="20"
+            android:text=" "
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/t5"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginVertical="3dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Email ID"
+        map:endIconMode="clear_text"
+        map:errorIconDrawable="@drawable/error"
+        map:layout_constraintBottom_toTopOf="@+id/t10"
+        map:layout_constraintEnd_toStartOf="@+id/iv_email"
+        map:layout_constraintHorizontal_bias="0.5"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/t3"
+        map:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:text=" "
+            android:enabled="false"
+            android:textColor="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/iv_email"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        android:src="@drawable/profile_editicon"
+        map:layout_constraintBottom_toBottomOf="@id/t5"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.5"
+        map:layout_constraintStart_toEndOf="@+id/t5"
+        map:layout_constraintTop_toTopOf="@+id/t5" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/t10"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+
+        android:hint="Mobile No."
+        map:endIconMode="clear_text"
+        map:errorIconDrawable="@drawable/error"
+        map:layout_constraintBottom_toTopOf="@+id/t11"
+        map:layout_constraintEnd_toEndOf="@+id/t5"
+        map:layout_constraintHorizontal_bias="0.5"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/t5"
+        map:layout_constraintVertical_bias="0.0"
+        map:prefixText="+91">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="10"
+            android:text=" "
+            android:enabled="false"
+            android:textColor="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_mobile"-->
+<!--        android:layout_width="45dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:padding="8dp"-->
+<!--        android:src="@drawable/profile_editicon"-->
+<!--        map:layout_constraintBottom_toBottomOf="@id/t10"-->
+<!--        map:layout_constraintEnd_toEndOf="parent"-->
+<!--        map:layout_constraintHorizontal_bias="0.5"-->
+<!--        map:layout_constraintStart_toEndOf="@+id/t10"-->
+<!--        map:layout_constraintTop_toTopOf="@+id/t10" />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/t11"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="1dp"
+        android:layout_marginStart="16dp"
+        android:hint="Password"
+        map:counterEnabled="true"
+        map:counterMaxLength="8"
+        map:endIconMode="password_toggle"
+        map:errorIconDrawable="@drawable/error"
+        map:layout_constraintBottom_toTopOf="@+id/btn_save"
+        map:layout_constraintEnd_toStartOf="@+id/iv_pass"
+        map:layout_constraintHorizontal_bias="0.5"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/t10">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLength="8"
+            android:text=" "
+            android:enabled="false"
+            android:textColor="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/iv_pass"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        android:src="@drawable/profile_editicon"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.5"
+        map:layout_constraintStart_toEndOf="@+id/t11"
+        map:layout_constraintBottom_toBottomOf="@id/t11"
+        map:layout_constraintTop_toTopOf="@+id/t11" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        map:layout_constraintGuide_percent="0.23" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:drawableEnd="@drawable/profile_save"
+        android:padding="10dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="SAVE"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        map:layout_constraintGuide_percent="0.82" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        map:layout_constraintGuide_percent="0.9" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="49dp"
+        android:layout_height="61dp"
+        android:backgroundTint="@color/purple_700"
+        android:clickable="true"
+        map:layout_constraintBottom_toBottomOf="@+id/vhome_profile_image"
+        map:layout_constraintEnd_toEndOf="@+id/vhome_profile_image"
+        android:src="@drawable/profile_edit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
