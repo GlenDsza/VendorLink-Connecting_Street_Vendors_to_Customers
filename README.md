@@ -1,4 +1,4 @@
-<img align="left" style="margin-top:25px" width="60" height="60" src="images/VendorLink.png">
+<img align="left" style="margin-top:25px" width="60" height="60" src="Images/VendorLink.png">
 
 # VendorLink : Connecting Customers to Street vendors
 
@@ -35,9 +35,9 @@ VendorLink application consists of a customer module and a Vendor Module.
  ## Screenshots ✨
 <table>
     <tr>
-        <td><img src="images/SS/1.png" width="180" height="380"></td>
-        <td><img src="images/SS/2.png" width="180" height="380"></td>
-        <td><img src="images/SS/3.jpeg" width="180" height="380"></td>
+        <td><img src="Images/SS/1.png" width="180" height="380"></td>
+        <td><img src="Images/SS/2.png" width="180" height="380"></td>
+        <td><img src="Images/SS/3.jpeg" width="180" height="380"></td>
     </tr>
 </table>
 
@@ -45,16 +45,16 @@ VendorLink application consists of a customer module and a Vendor Module.
 
 <table>    
     <tr>
-        <td><img src="images/SS/c-1.png" width="180" height="360"></td>
-        <td><img src="images/SS/c-2.png" width="180" height="360"></td>
-        <td><img src="images/SS/c-3.png" width="180" height="360"></td>
-        <td><img src="images/SS/c-4.jpeg" width="180" height="360"></td>
+        <td><img src="Images/SS/c-1.png" width="180" height="360"></td>
+        <td><img src="Images/SS/c-2.png" width="180" height="360"></td>
+        <td><img src="Images/SS/c-3.png" width="180" height="360"></td>
+        <td><img src="Images/SS/c-4.jpeg" width="180" height="360"></td>
     </tr>
     <tr>
-        <td><img src="images/SS/c-5.png" width="180" height=""></td>
-        <td><img src="images/SS/c-6.jpeg" width="180" height=""></td>
-        <td><img src="images/SS/c-7.jpeg" width="180" height=""></td>
-        <td><img src="images/SS/c-8.jpeg" width="180" height=""></td>
+        <td><img src="Images/SS/c-5.png" width="180" height=""></td>
+        <td><img src="Images/SS/c-6.jpeg" width="180" height=""></td>
+        <td><img src="Images/SS/c-7.jpeg" width="180" height=""></td>
+        <td><img src="Images/SS/c-8.jpeg" width="180" height=""></td>
     </tr>
 </table>
 
@@ -62,13 +62,13 @@ VendorLink application consists of a customer module and a Vendor Module.
 
 <table>    
     <tr>
-        <td><img src="images/SS/v-1.png" width="180" height="360"></td>
-        <td><img src="images/SS/v-2.jpeg" width="180" height="360"></td>
-        <td><img src="images/SS/v-3.png" width="180" height="360"></td>
+        <td><img src="Images/SS/v-1.png" width="180" height="360"></td>
+        <td><img src="Images/SS/v-2.jpeg" width="180" height="360"></td>
+        <td><img src="Images/SS/v-3.png" width="180" height="360"></td>
     </tr>
     <tr>
-        <td><img src="images/SS/v-4.jpeg" width="180" height="360"></td>
-        <td><img src="images/SS/v-5.jpeg" width="180" height="360"></td>
+        <td><img src="Images/SS/v-4.jpeg" width="180" height="360"></td>
+        <td><img src="Images/SS/v-5.jpeg" width="180" height="360"></td>
     </tr>
 </table>
 <br>
